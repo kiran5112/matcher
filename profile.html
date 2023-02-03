@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE MATCHER</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .main {
+            background-color: darksalmon;
+            width: 450px;
+            height: 520px;
+            border-radius: 40px;
+            border: 3px yellow solid;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 30px;
+
+
+        }
+
+        input {
+            border: 1px red solid;
+            margin: 3px;
+        }
+
+        button {
+            background-image: linear-gradient(skyblue, red);
+            border-radius: 40px;
+            padding: 4px;
+        }
+
+        h1 {
+            text-align: center;
+            height: 90px;
+            width: 70px;
+            border: 5px black solid;
+            border-radius: 60px;
+            font-size: 50px;
+            line-height: 70px;
+            
+        }
+        h2{
+            font-size: 30px;
+            text-align: center;
+            text-shadow: 2px 2px yellow;
+        }
+       
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2> Profile💘 matcher</h2>
+        <h1 > 👩 </h1>
+        <input id="k" type="=text"> <input onclick="callba()" type="=button"> <br>
+        <button onclick="gener1()" id="root">put me value</button>
+        <div id="god1"> </div>
+        
+        <h1>🧑‍🦰</h1>
+        <input id="k1" type="=text"> <input onclick="call()" type="=button"> <br>
+        <button onclick="gener()" id="root">put me value</button>
+        <div id="god"> </div>
+
+
+    </div>
+</body>
+<script>
+    var hobby1 = ['playing cricket', 'cooking', 'running', 'swiming'];
+
+    var hobby2 = ['shutting', 'reading', 'playing cricket', 'cooking'];
+    function gener() {
+        var gener = document.getElementById("k1").value;
+        document.getElementById("god").innerHTML = gener;
+
+
+    }
+    function gener1() {
+
+        var gener1 = document.getElementById("k").value;
+        document.getElementById("god1").innerHTML = gener1;
+ 
+   }
+
+   function call (){
+alert("print valid value")
+   }
+
+   function callba (){
+var a=  prompt("put a same hobby")
+alert(a+" "+"is our same hobby")
+   }
+
+    // function test() {
+    //     var hobby1 = ['playing cricket', 'cooking', 'running', 'swiming'];
+    //     var hobby2 = ['shutting', 'reading', 'playing cricket', 'cooking'];
+    //     if (hobby1 === hobby2) {
+    //         // alert("same too same")
+    //         var gener1 = document.getElementById("kk").value;
+    //         document.getElementById("god1").innerHTML = gener1;
+    //     } else {
+    //         // alert("No match")
+    //         var gener1 = document.getElementById("k2").value;
+    //         document.getElementById("god").innerHTML = gener;
+
+    //     }
+    // }
+    // console.log(test());
+</script>
+
+</html>
